@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Divya Limbachiya | Product Owner</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafaf7;--surface:#fff;--ink:#14171f;--mute:#5d6470;--line:#e4e4de;--accent:#3b4cca;--accent-soft:#e8eafc;--ok:#1f8a5b;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1117;--surface:#171a23;--ink:#eceef4;--mute:#9aa1b0;--line:#2a2e3b;--accent:#8c9bff;--accent-soft:#222744;--ok:#4fd199;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1117;--surface:#171a23;--ink:#eceef4;--mute:#9aa1b0;--line:#2a2e3b;--accent:#8c9bff;--accent-soft:#222744;--ok:#4fd199;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Inter,system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:980px;margin:0 auto;padding:0 22px}
+.mono{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:54px;gap:12px}
+nav a{color:var(--mute);text-decoration:none;font-size:14px;margin-left:18px}
+nav a:hover{color:var(--ink)}
+.logo{font-weight:700;color:var(--ink)!important;margin:0!important}
+.links{display:flex;align-items:center;overflow-x:auto}
+#theme{margin-left:18px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:8px;padding:4px 9px;cursor:pointer;font-size:13px}
+.hero{padding:84px 0 48px}
+.tag{display:inline-block;font-size:13px;color:var(--accent);background:var(--accent-soft);padding:4px 12px;border-radius:99px;margin-bottom:20px}
+h1{font-size:clamp(38px,7vw,68px);line-height:1.04;letter-spacing:-.03em;margin:0 0 18px;font-weight:700}
+h1 em{font-style:normal;color:var(--accent)}
+.lead{font-size:clamp(17px,2.2vw,20px);color:var(--mute);max-width:660px;margin:0 0 28px}
+.cta{display:flex;gap:10px;flex-wrap:wrap}
+.btn{padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;font-size:15px;border:1px solid var(--line);color:var(--ink);background:var(--surface);transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.p{color:#0f1117}}
+:root[data-theme="dark"] .btn.p{color:#0f1117}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin:44px 0 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.stat b{display:block;font-size:32px;letter-spacing:-.02em;color:var(--accent)}
+.stat span{font-size:13px;color:var(--mute)}
+section{padding:56px 0}
+.eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+h2{font-size:clamp(26px,4vw,36px);letter-spacing:-.02em;margin:0 0 8px}
+.sub{color:var(--mute);margin:0 0 26px;max-width:620px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:99px;padding:6px 14px;font-size:13.5px;cursor:pointer;font-family:inherit;transition:.15s}
+.chip:hover{border-color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .chip[aria-pressed="true"]{color:#0f1117}}
+:root[data-theme="dark"] .chip[aria-pressed="true"]{color:#0f1117}
+.hint{font-size:13px;color:var(--mute);margin:-10px 0 18px}
+.board{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.epic{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;transition:.2s}
+.epic.dim,.job.dim{opacity:.28}
+.epic h3{margin:6px 0 8px;font-size:18px;letter-spacing:-.01em}
+.epic p{margin:0 0 12px;color:var(--mute);font-size:14.5px}
+.epic .id{font-size:11.5px;color:var(--mute)}
+.ac{list-style:none;padding:0;margin:0}
+.ac li{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;padding:7px 0;border-top:1px dashed var(--line);cursor:pointer;user-select:none}
+.box{flex:none;width:17px;height:17px;border:1.5px solid var(--mute);border-radius:5px;margin-top:2px;display:grid;place-items:center;font-size:11px;color:transparent;transition:.15s}
+.ac li.done .box{background:var(--ok);border-color:var(--ok);color:#fff}
+.ac li.done span.t{color:var(--mute);text-decoration:line-through}
+.prog{height:5px;background:var(--line);border-radius:9px;margin-top:12px;overflow:hidden}
+.prog i{display:block;height:100%;width:0;background:var(--ok);transition:width .3s}
+.pl{font-size:12px;color:var(--mute);margin-top:6px}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.job{position:relative;padding:0 0 22px 24px;transition:.2s}
+.job::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--bg);border:2px solid var(--accent)}
+.job button{all:unset;cursor:pointer;display:block;width:100%}
+.job .top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.job strong{font-size:17px}
+.job .d{font-size:12.5px;color:var(--mute)}
+.job .r{color:var(--mute);font-size:14.5px}
+.job ul{margin:8px 0 0;padding-left:18px;font-size:14.5px;color:var(--mute);display:none}
+.job.open ul{display:block}
+.job .more{font-size:12.5px;color:var(--accent);margin-top:4px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.card h4{margin:0 0 6px;font-size:14px}
+.card p{margin:0;font-size:14px;color:var(--mute)}
+.contact{text-align:center;padding:64px 0 80px}
+.contact h2{font-size:clamp(28px,5vw,44px)}
+footer{border-top:1px solid var(--line);padding:22px 0;font-size:13px;color:var(--mute);text-align:center}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><a class="logo" href="#top">DL</a>
+<div class="links"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#approach">Approach</a><a href="#contact">Contact</a><button id="theme" aria-label="Toggle theme">◐</button></div></div></nav>
+
+<main id="top" class="wrap">
+<header class="hero">
+  <span class="tag mono">● Open to Product Owner roles</span>
+  <h1>I turn lending and credit strategy into <em>shipped product.</em></h1>
+  <p class="lead">Divya Limbachiya, Product Owner with 8+ years in banking and financial services. I own backlogs, write sprint-ready stories, and lead cross-functional teams from discovery to go-live.</p>
+  <div class="cta"><a class="btn p" href="mailto:limbachiya.divya05@gmail.com">Email me</a><a class="btn" href="https://www.linkedin.com/in/divyalimbachiya/" target="_blank" rel="noopener">LinkedIn</a><a class="btn" href="#work">See my work ↓</a></div>
+  <div class="stats">
+    <div class="stat"><b data-n="1.5" data-s="M" data-d="1">0</b><span>cardholders in my product portfolio</span></div>
+    <div class="stat"><b data-n="250" data-s="K">0</b><span>rewards balances preserved in migration</span></div>
+    <div class="stat"><b data-n="5" data-s="M+">0</b><span>SMS messages per month moved to Twilio</span></div>
+    <div class="stat"><b data-n="200" data-s="+">0</b><span>data fields and rules mapped</span></div>
+  </div>
+</header>
+
+<section id="work">
+  <div class="eyebrow mono">Selected work · the backlog</div>
+  <h2>Epics I’ve owned</h2>
+  <p class="sub">Click an acceptance criterion to mark it done, the way I run a sprint review. Use the filter to see where each skill shows up.</p>
+  <div class="chips" id="chips" role="group" aria-label="Filter by skill"></div>
+  <p class="hint" id="hint">Showing everything. Pick a skill to highlight matching work and roles.</p>
+  <div class="board" id="board"></div>
+</section>
+
+<section id="experience">
+  <div class="eyebrow mono">Career</div>
+  <h2>Experience</h2>
+  <p class="sub">Click a role to expand the highlights.</p>
+  <div class="tl" id="tl"></div>
+</section>
+
+<section id="approach">
+  <div class="eyebrow mono">How I work</div>
+  <h2>Product Owner approach</h2>
+  <p class="sub">The daily habits behind the delivery.</p>
+  <div class="grid">
+    <div class="card"><h4>Strategy to stories</h4><p>Translate roadmap priorities into epics, features, and user stories with clear acceptance criteria and a definition of done.</p></div>
+    <div class="card"><h4>Lead without authority</h4><p>Align engineering, architecture, design, operations, and vendors around one prioritized backlog.</p></div>
+    <div class="card"><h4>Data-backed decisions</h4><p>SQL analysis, A/B and UAT testing, and trend reading to diagnose problems and recommend action.</p></div>
+    <div class="card"><h4>Release readiness</h4><p>Business validation, go/no-go inputs, risk tracking, and clear updates to leadership on dependencies.</p></div>
+    <div class="card"><h4>AI-assisted delivery</h4><p>Use AI tools such as Kiro and Agentz.AI to speed up analysis and delivery, and validate LLM output against ground truth.</p></div>
+    <div class="card"><h4>Fast domain learner</h4><p>Credit, rewards, payments, healthcare, courts, and marketing. I ramp quickly on new business processes.</p></div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="eyebrow mono">Let’s talk</div>
+  <h2>Ready to own your roadmap?</h2>
+  <p class="sub" style="margin:0 auto 24px">Atlanta, GA · (720) 466-3117</p>
+  <div class="cta" style="justify-content:center"><a class="btn p" href="mailto:limbachiya.divya05@gmail.com">limbachiya.divya05@gmail.com</a><a class="btn" href="https://www.linkedin.com/in/divyalimbachiya/" target="_blank" rel="noopener">Connect on LinkedIn</a></div>
+</section>
+</main>
+<footer>© 2026 Divya Limbachiya</footer>
+
+<script>
+const epics=[
+{id:"EPIC-01",t:"Rewards platform migration",p:"Moved rewards from TSYS to Fiserv without losing a single customer’s points.",tags:["Data Migration","Rewards","APIs"],ac:["Map 200+ data fields and business rules across 2 rewards products","Preserve points balances for 250K cardholders","Protect co-brand partners, including Best Western (World Card)"]},
+{id:"EPIC-02",t:"Consumer credit product ownership",p:"Backlog and requirements across acquisition, underwriting, and servicing.",tags:["Product Ownership","Credit","Agile"],ac:["Deliver Credit Line Increase (CLI and CLI with fee)","Launch Aspire Flex campaigns and credit protection","Support 1.5M cardholders through the Atlanticus–Mercury merger"]},
+{id:"EPIC-03",t:"SMS vendor consolidation",p:"Consolidated messaging from TMQ to Twilio and kept data flows clean.",tags:["APIs","Vendor Integration","Data Migration"],ac:["Cover 5M+ customer messages per month","Manage data flows across the System of Record, Customer Service Dashboard, and Account Center","Validate with Smoke, A/B, and UAT testing"]},
+{id:"EPIC-04",t:"Statewide court CRM",p:"One unified platform for Georgia’s courts, hosted on AWS.",tags:["Data Migration","Discovery","AI Tools"],ac:["Run discovery across 45 court sessions with judges and staff","Define a consolidated data model and source-to-target mappings","Partner on ETL design in an AI-assisted workflow with Kiro"]},
+{id:"EPIC-05",t:"Requirements that cut rework",p:"Discovery, mockups, and SQL analysis before a story reaches the sprint.",tags:["Product Ownership","Agile","Analytics"],ac:["Validate 50+ requirements via workshops and Figma mockups","Test with SQL analysis and UAT","Cut rework by 20%"]},
+{id:"EPIC-06",t:"AI-powered CRM and automation",p:"Salesforce delivery, Agentz.AI, and LLM output validation.",tags:["Salesforce","AI Tools","APIs"],ac:["Implement Agentz.AI for AI-powered customer interactions","Validate LLM outputs against ground truth data","Automate a 2% annual price increase with 100% invoice accuracy"]}
+];
+const jobs=[
+{c:"Atlanticus",l:"Atlanta, GA",d:"Apr 2026 – Present",r:"Product Owner",tags:["Product Ownership","Credit","Rewards","Data Migration","APIs","Agile","Vendor Integration","Analytics"],h:["Own backlog and requirements for consumer credit products serving 1.5M cardholders","Led the TSYS-to-Fiserv rewards migration for 250K cardholders","Drove the TMQ-to-Twilio SMS consolidation (5M+ messages per month)","Cut rework by 20% through discovery, Figma, SQL analysis, and UAT"]},
+{c:"Georgia Technology Authority",l:"Contract",d:"Dec 2025 – Apr 2026",r:"Senior Technical Business Analyst",tags:["Data Migration","Discovery","AI Tools"],h:["Supported the statewide CRM consolidation for the Administrative Office of the Courts","Ran discovery across 45 court sessions","Built source-to-target mappings and managed Change Requests"]},
+{c:"Fullsteam",l:"Atlanta, GA",d:"Dec 2024 – Oct 2025",r:"Senior Project Manager",tags:["Salesforce","AI Tools","APIs","Analytics"],h:["Led enterprise CRM and marketing automation delivery on Salesforce","Implemented Agentz.AI and built a Metabase reporting solution","Validated REST and SOAP APIs with Postman and SoapUI"]},
+{c:"CVS Pharmacy",l:"Remote",d:"Aug 2022 – Oct 2024",r:"Business Systems / Data Analyst",tags:["APIs","AI Tools","Analytics"],h:["Interpreted AML regulations for compliance and audit standards","Reduced manual work by 30% through TRR automation","Documented APIs in Swagger and supported AI/ML data labeling"]},
+{c:"Vanguard",l:"Remote",d:"Jan 2022 – Jul 2022",r:"Business Analyst / Data Analyst",tags:["Analytics","APIs"],h:["Built UML models for ACH workflows and REST API planning","Improved data quality through SQL and financial data analysis"]},
+{c:"Earlier roles",l:"",d:"2018 – 2022",r:"GDC/GCI · Merck & Co. · Broadridge–UBS",tags:["Data Migration","Analytics","Credit"],h:["Launched 6 cloud e-service interfaces and lifted weekly integration KPIs by 20%","Built Spotfire and Teradata reporting for Merck vaccines tenders","Defined mapping rules for lending origination workflows at Broadridge–UBS"]}
+];
+const tags=[...new Set([...epics,...jobs].flatMap(x=>x.tags))].sort();
+let sel=null;
+const $=s=>document.querySelector(s);
+const chips=$("#chips"),board=$("#board"),tl=$("#tl");
+function render(){
+  chips.innerHTML="";
+  tags.forEach(t=>{const b=document.createElement("button");b.className="chip";b.textContent=t;b.setAttribute("aria-pressed",sel===t);b.onclick=()=>{sel=sel===t?null:t;apply()};chips.appendChild(b)});
+  board.innerHTML=epics.map((e,i)=>`<article class="epic" data-i="${i}"><span class="id mono">${e.id}</span><h3>${e.t}</h3><p>${e.p}</p><ul class="ac">${e.ac.map(a=>`<li tabindex="0" role="checkbox" aria-checked="false"><span class="box">✓</span><span class="t">${a}</span></li>`).join("")}</ul><div class="prog"><i></i></div><div class="pl mono">0/${e.ac.length} accepted</div></article>`).join("");
+  tl.innerHTML=jobs.map((j,i)=>`<div class="job" data-i="${i}"><button aria-expanded="false"><div class="top"><strong>${j.c}${j.l?" · "+j.l:""}</strong><span class="d mono">${j.d}</span></div><div class="r">${j.r}</div><ul>${j.h.map(h=>`<li>${h}</li>`).join("")}</ul><div class="more">Show highlights +</div></button></div>`).join("");
+  board.querySelectorAll(".ac li").forEach(li=>{const tog=()=>{li.classList.toggle("done");li.setAttribute("aria-checked",li.classList.contains("done"));const card=li.closest(".epic"),all=card.querySelectorAll(".ac li"),n=card.querySelectorAll(".ac li.done").length;card.querySelector(".prog i").style.width=(n/all.length*100)+"%";card.querySelector(".pl").textContent=n+"/"+all.length+(n===all.length?" accepted · Done ✓":" accepted")};li.onclick=tog;li.onkeydown=e=>{if(e.key===" "||e.key==="Enter"){e.preventDefault();tog()}}});
+  tl.querySelectorAll(".job button").forEach(b=>b.onclick=()=>{const j=b.parentElement,o=j.classList.toggle("open");b.setAttribute("aria-expanded",o);b.querySelector(".more").textContent=o?"Hide highlights −":"Show highlights +"});
+}
+function apply(){
+  chips.querySelectorAll(".chip").forEach(c=>c.setAttribute("aria-pressed",c.textContent===sel));
+  board.querySelectorAll(".epic").forEach(el=>el.classList.toggle("dim",!!sel&&!epics[el.dataset.i].tags.includes(sel)));
+  tl.querySelectorAll(".job").forEach(el=>el.classList.toggle("dim",!!sel&&!jobs[el.dataset.i].tags.includes(sel)));
+  $("#hint").textContent=sel?"Highlighting work and roles that involve “"+sel+"”. Click it again to reset.":"Showing everything. Pick a skill to highlight matching work and roles.";
+}
+render();
+// count-up stats
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;io.unobserve(e.target);const el=e.target,n=+el.dataset.n,dec=+(el.dataset.d||0),s=el.dataset.s;const t0=performance.now();(function f(t){const p=Math.min((t-t0)/1100,1),v=n*(1-Math.pow(1-p,3));el.textContent=v.toFixed(dec)+(p===1?s:"");if(p<1)requestAnimationFrame(f)})(t0)}),{threshold:.4});
+document.querySelectorAll("[data-n]").forEach(el=>io.observe(el));
+// theme toggle (in-memory)
+$("#theme").onclick=()=>{const r=document.documentElement,dark=r.dataset.theme?r.dataset.theme==="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=dark?"light":"dark"};
+</script>
+</body>
+</html>
